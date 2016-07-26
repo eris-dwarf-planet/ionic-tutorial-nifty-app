@@ -32,6 +32,11 @@ var app = angular.module('starter', [
 // FireBase initialize settings.
 .constant('FURL', 'https://df-etsy-clone-001.firebaseio.com/')
 
+// Nifty settings.
+.constant('NIFTY_APPKEY', '3b0f9e3e515c68a2d3a69e091378044fb8249221b7e75c338f8428aa65d23783')
+.constant('NIFTY_CLIENTKEY', 'a4b33674ffecf615b7b14deae4922191384d6685b131195d521adade09f354ab')
+
+
 .config(function($stateProvider, $urlRouterProvider) {
 
   // Ionic uses AngularUI Router which uses the concept of states
@@ -115,6 +120,6 @@ var app = angular.module('starter', [
     });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/tab/dash');
+    $urlRouterProvider.otherwise('/login');
 
 });
